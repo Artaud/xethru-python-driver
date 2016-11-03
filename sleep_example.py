@@ -3,7 +3,7 @@ from xethru_const import *
 import sys
 
 print "Starting XeThru sensor...",
-sensor = xethru.Xethru("/dev/ttyACM0", XTS_ID_APP_SLEEP, reconfigure_sensor = True, detection_zone_min = 0.7, detection_zone_max = 1.8, led_mode = XT_UI_LED_MODE_OFF, sensitivity=7, output_format = XTS_SACR_ID_BASEBAND_OUTPUT_OFF, verbose = False)
+sensor = xethru.Xethru("/dev/ttyACM0", XTS_ID_APP_SLEEP, reconfigure_sensor = True, detection_zone_min = 0.7, detection_zone_max = 1.8, led_mode = XT_UI_LED_MODE_FULL, sensitivity=7, output_format = XTS_SACR_ID_BASEBAND_OUTPUT_IQ, verbose = False)
 print "Ready."
 print ""
 
